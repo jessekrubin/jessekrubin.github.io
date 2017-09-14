@@ -1,3 +1,5 @@
 # thejesserubin
 website
-this is where thingy will happen. README MAN
+
+Ahoy, you have found the README for my website. 
+kudos
