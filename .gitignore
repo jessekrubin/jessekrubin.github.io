@@ -1,0 +1,7 @@
+# thejesserubin dot com .gitignore
+
+node_modules/
+build/
+bundle.js
+*.Logs
+

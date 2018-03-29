@@ -91,11 +91,8 @@
 			function map2Click(e2) {
 				lat1 = -e2.latlng.lat;
 				lng1 = e2.latlng.lng - 180;
-
 				lat2 = e2.latlng.lat;
 				lng2 = e2.latlng.lng;
-
-
 				popup1
 					.setLatLng([lat1, lng1])
 					.setContent("(" + lat1.toFixed(3).toString() + ", " + lng1.toFixed(3).toString() + ")")
@@ -108,15 +105,12 @@
 				map1.panTo([lat1, lng1]);
 				map2.panTo([lat2, lng2]);
 			}
-
 			map1.on('click', map1Click);
 			map2.on('click', map2Click);
 		</script>
-
 		<a href="index.html" class="center-block">HOME</a>
-
 		<footer class="myFooter center-block">
-			copyright © 2018 jesse rubin?
+			copyright © 2017-2018 jesse rubin?
 		</footer>
 	</center>
 </body>
