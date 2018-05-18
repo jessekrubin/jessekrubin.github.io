@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if title %}
+        <title>{{ title }} - TJRDC</title>
+    {% else %}
+        <title>Untitled - TJRDC</title>
+    {% endif %}
+{#    <script src="{{url_for('static', filename='jquery-2.2.2.min.js')}}"></script>#}
+    <link rel="stylesheet" href="{{url_for('static', filename='leaflet/leaflet.css')}}">
+    <script src="{{url_for('static', filename='leaflet/leaflet.js')}}"></script>
+    {#    <link rel="stylesheet" href="{{ url_for('static', filename='styles/mini-default.css') }}">#}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bulma.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+<header>
+    <div class="columns">
+        <div class="column"></div>
+        <div class="column is-3">
+            <div class="card">
+                <div style="text-align: center">
+                    <p class="title">
+                        The Jesse Rubin Dot Com
+                    </p>
+                    <a href="/index">
+                        ~HOME~
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+</header>
+<hr>
+{% block content %}{% endblock %}
+<div class="column"></div>
+<hr>
+<footer>
+    <div class="columns">
+        <div class="column"></div>
+        <div class="column is-2">
+            <div class="card">
+                <div style="text-align: center">
+                    <a href="/index">
+                        ~HOME~
+                    </a>
+                    <p>
+                        &copy 2018 Jesse Rubin?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+</footer>
+</body>
+</html>

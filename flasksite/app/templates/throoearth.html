@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <div style="text-align: center;">
+        <p class="subtitle">
+            A small web app that tells you where you would end up if you dug through the center of the earth. Click on
+            either map.
+        </p>
+        <div class="columns">
+            <div class="column">
+                <div class="container" id="map1" style="width: inherit; height: 480px;"></div>
+            </div>
+            <div class="column">
+                <div id="map2" style="width: inherit; height: 480px;"></div>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='maps.js') }}"></script>
+    </div>
+{% endblock %}
+
+
